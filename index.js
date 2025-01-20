@@ -150,7 +150,7 @@ if (config.filter) {
 			synthfilter.nps.t.put();
 			synthfilter.nps.c();
 		}
-		if (config.filter.sustain || (synthfilter.c && synthfilter.c[n]) || !synthfilter.q.try()) return;
+		if (config.filter.sustain || (synthfilter.c && !synthfilter.c[n]) || !synthfilter.q.try()) return;
 		if (synthfilter.m) {
 			synthfilter.m.c[config.filter.multi.userkey ? synthfilter.m.key[n] : synthfilter.m.get()].stopNote(n);
 		} else client._stopNote(n);
