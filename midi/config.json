@@ -1,0 +1,9 @@
+{
+	"buffer": "same",
+	"tempo": false,
+	"update": 500,
+	"chunk": true,
+	"save": true,
+	"nodrum": true,
+	"velsus": true
+}
